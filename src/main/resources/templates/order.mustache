@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <title>Order </title>
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://tilda.ws/project2557065/tilda-blocks-2.12.css?t=1591029809" type="text/css"
+          media="all"/>
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css"
+          media="all"/>
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css"
+          media="all"/>
+    <script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
+    <script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
+    <script src="https://tilda.ws/project2557065/tilda-blocks-2.7.js?t=1591029809"></script>
+    <script src="https://static.tildacdn.com/js/lazyload-1.3.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
+    <script type="text/javascript">if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof (sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y') {
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = '@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+        document.getElementsByTagName('head')[0].appendChild(style);
+        $(document).ready(function () {
+            $('.t-records').addClass('t-records_animated');
+            setTimeout(function () {
+                $('.t-records').addClass('t-records_visible');
+                sessionStorage.setItem('visited', 'y');
+            }, 400);
+        });
+    }</script>
+    <style>
+
+
+        body{
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-size: 30px;
+            font-family: 'Exo 2', sans-serif;
+            background: #40babd url(https://i.imgur.com/0NBBakY.png) no-repeat center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .buttons a{
+            display: block;
+            text-align: center;
+            width: 380px;
+            text-decoration: none !important;
+            color: #40babd;
+            text-transform: uppercase;
+            border: 2px solid #40babd;
+            transition: all 0.3s linear;
+            padding:8px 30px;
+            margin: 10px 30px;
+        }
+        .buttons a:hover{
+            background-color: #40babd;
+            color: white;
+        }
+
+        .buttons{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .buttons .buttons_inner{
+            min-width: 13px;
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100vh;
+            background: url(https://i.imgur.com/Nii9THB.jpg) center repeat-y;
+            -webkit-background-size: cover;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #subtitle{
+            font-size: 100px;
+            margin-bottom: 100px;
+            font-weight: 700;
+            color: #40babd;
+        }
+
+        .menu_inner{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            background: #298d90;
+            padding: 0;
+            z-index: 1;
+        }
+
+        .menu_inner li{
+            width: 100vw;
+        }
+
+        .menu_inner li a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color:white;
+
+            font-size: 24px;
+            padding: 7px 30px;
+            transition: .24s;
+        }
+        .menu_inner li a:hover{
+            background: rgb(8, 124, 139);
+        }
+
+        .first_but{
+            align:center;
+            display: block;
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            text-decoration: none !important;
+            font-height: 20px;
+            font-size: 30px;
+            color: white;
+            border: 2px solid #298d90;
+            background: #298d90;
+            text-underline-position;
+            transition: all 0.2s linear;
+        }
+
+
+
+
+        .first_but:hover{
+            background: rgb(8, 124, 139);
+            border: 2px solid rgb(8, 124, 139);
+            color: white;
+        }
+
+
+        /*TABLE*/
+
+        .maintable{
+            background: white;
+        }
+
+        table {
+            *border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            margin: auto;
+
+        }
+        thead{
+            font-size: 24px;
+            background:#298d90 ;
+            color: #fff;
+
+        }
+        thead tr td{
+            border-right: 1px solid white;
+        }
+
+        .bordered {
+            border: solid rgb(8, 124, 139) 2px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 10px;
+        }
+
+        .bordered .anim tr:hover {
+            background: rgb(8, 124, 139);
+            -o-transition: all 0.1s ease-in-out;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            color:white;
+        }
+
+        .bordered td, .bordered th {
+
+            border-left: 1px solid #298d90;
+            border-top: 1px solid #298d90;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .bordered th {
+            background-color: #dce9f9;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+            background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+            -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+            -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+            box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+            border-top: none;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        }
+
+        .bordered td:first-child, .bordered th:first-child {
+            border-left: none;
+        }
+
+        .modal-header{
+            background: #298d90;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-control{
+            width:200px;
+
+        }
+        #text1{
+            color: #40babd;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="2557065"
+     data-tilda-page-id="11786895" data-tilda-page-alias="category"
+     data-tilda-formskey="a06e7fcbfe1ed7a6eb3227d948d97a45">
+    <div id="rec197954913" class="r t-rec t-rec_pt_0 t-rec_pb_0"
+         style="padding-top:0px;padding-bottom:0px;background-color:#087c8b; " data-animationappear="off"
+         data-record-type="456" data-bg-color="#087c8b"><!-- T456 -->
+        <div id="nav197954913marker"></div>
+        <div class="t456__mobile">
+            <div class="t456__mobile_container">
+                <div class="t456__mobile_text t-name t-name_md" field="text">&nbsp;</div>
+                <div class="t456__burger"><span></span> <span></span> <span></span> <span></span></div>
+            </div>
+        </div>
+        <div id="nav197954913" class="t456 t456__hidden t456__positionabsolute "
+             style="background-color: rgba(8,124,139,1); height:110px; " data-bgcolor-hex="#087c8b"
+             data-bgcolor-rgba="rgba(8,124,139,1)" data-navmarker="nav197954913marker" data-appearoffset=""
+             data-bgopacity-two="60" data-menushadow="" data-bgopacity="1"
+             data-bgcolor-rgba-afterscroll="rgba(8,124,139,0.60)" data-menu-items-align="right" data-menu="yes">
+            <div class="t456__maincontainer " style="height:100px;">
+                <div class="t456__leftwrapper" style="">
+                    <div><a href="/"
+                            style="color:#ffffff;letter-spacing:0.5px;font-family:&apos;Arial&apos;; font-size:80px">
+                        <div>
+                            BShop
+                        </div>
+                    </a></div>
+                </div>
+                <div class="t456__rightwrapper t456__menualign_right" style="">
+                    <ul class="t456__list">
+
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="/category"
+                                                       data-menu-submenu-hook=""
+                                                       style="color:#ffffff;font-size:32px;font-weight:600;"
+                                                       data-menu-item-number="2">Категорії</a></li>
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="/info" data-menu-submenu-hook=""
+                                                       style="color:#ffffff;font-size:32px;font-weight:600;"
+                                                       data-menu-item-number="3">Інформація</a></li>
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="/user" data-menu-submenu-hook=""
+                                                       style="color:#ffffff;font-size:32px;font-weight:600;"
+                                                       data-menu-item-number="3">Особистий кабінет</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+<div class="wrapper">
+
+    <section class="menu">
+        <div class="container">
+
+
+            <div class="col-lg-4 col-sm-4" >
+
+
+                <div class="col-lg-4 col-sm-4">
+                    <h1 id="subtitle" style="padding-left:15%">Замовлення</h1>
+
+                </div>
+{{#pp}}
+
+
+                <table > <tr>  <td style="padding-left: 150px;">{{brand}}</td><td>-</td></t><td>{{model}}</td><td>-</td><td>{{price}}грн.</td> </tr></table>
+
+
+
+
+
+
+
+                <form action="/order" method="post">
+
+                    <div style="padding-left: 200px;"><label> Адреса:  <input class="form-control" type="text" name="address"/> </label></div>
+                    <div style="padding-left: 200px;"><label> Телефон: <input class="form-control" type="text" name="phone"/> </label></div>
+                   <input type="hidden" name="id" value="{{id}}">
+                    <!--<div><label> Нова Пошта<input type="radio" name="np" value="rad1"> </label></div>
+                    <div><label> Укр Пошта<input type="radio" name="up" value="rad2"> </label></div> -->
+                    <div style="padding-left: 200px;" ><button id="button" class="first_but"  type="submit">Замовити</button></div>
+                </form>
+                {{/pp}}
+
+            </div>
+
+
+
+
+
+        </div>
+
+</section>
+</div>
+
+
+</body>
+</html>
